@@ -1,0 +1,50 @@
+:root{
+  --speed:0;
+}
+.bg{
+  height: 340px;
+  width:1020px;
+  background-color: peru;
+  margin:50px;
+  display: flex;
+}
+.slot{
+  height: 300px;
+  width:300px;
+  margin:20px;
+  background-color:aqua;
+  text-align: center;
+  font-size: 150px;
+  overflow: hidden;
+
+
+}
+#inp{
+  width:80px;
+  height: 20px;
+  margin-left: 50px;
+}
+#but{
+  width:80px;
+  height: 20px;
+}
+.res{
+  width:400px;
+  height: :50px;
+  background-color: greenyellow;
+  margin:50px;
+}
+.slotin{
+  animation-name: emoj;
+  animation-iteration-count: infinite;
+  animation-duration: calc(1s/var(--speed));
+}
+@keyframes emoj {
+  0%{
+    transform: translateY(-120px);
+  }
+
+  100%{
+    transform: translateY(230px);
+  }
+}
